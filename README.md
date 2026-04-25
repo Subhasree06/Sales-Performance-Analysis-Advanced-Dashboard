@@ -4,9 +4,9 @@
 
 ## 🚀 Project Overview
 
-This project demonstrates an end-to-end sales analytics solution built using Microsoft Excel. It covers data cleaning, data modeling, and business analysis using advanced Excel tools like Power Query, Power Pivot, and DAX.
+This project demonstrates an end-to-end sales analytics solution built using Microsoft Excel. It includes data cleaning, data modeling, advanced calculations, and forecasting to derive meaningful business insights.
 
-The goal of this project is to transform raw sales data into meaningful insights and build an interactive dashboard for decision-making.
+The project transforms raw sales data into an interactive dashboard that supports data-driven decision-making.
 
 ---
 
@@ -16,6 +16,8 @@ The goal of this project is to transform raw sales data into meaningful insights
 * Power Query (Data Cleaning)
 * Power Pivot (Data Modeling)
 * DAX (Data Analysis Expressions)
+* Forecasting (ETS Model)
+* Conditional Formatting
 
 ---
 
@@ -57,7 +59,7 @@ A **Star Schema** was implemented:
 * Sales → Products (ProductID)
 * Sales → Customers (CustomerID)
 
-This enables efficient querying and advanced calculations.
+This structure improves performance and enables advanced analytics.
 
 ---
 
@@ -74,23 +76,55 @@ This enables efficient querying and advanced calculations.
 
 ## 📊 Dashboard Features
 
-* KPI Cards:
+### 🔹 KPI Cards
 
-  * Total Revenue
-  * Profit
-  * Profit %
+* Total Revenue
+* Profit
+* Profit %
 
-* Visualizations:
+### 🔹 Visualizations
 
-  * Sales Trend Over Time
-  * Region-wise Sales
-  * Top Performing Products
+* Sales Trend Over Time
+* Region-wise Sales
+* Top Performing Products
 
-* Interactive Filters (Slicers):
+### 🔹 Interactive Filters
 
-  * Region
-  * Category
-  * Segment
+* Region
+* Category
+* Segment
+
+---
+
+## 📉 Forecasting Analysis (NEW 🔥)
+
+Forecasting was performed using Excel’s **Exponential Smoothing (ETS) model**.
+
+### Key Observations:
+
+* Sales show a consistent **upward trend**
+* Forecast predicts continued growth in future periods
+* Confidence intervals indicate expected value range
+* No strong seasonality pattern observed
+
+### Accuracy Metrics:
+
+* Low error values (MAE, RMSE, SMAPE)
+* Indicates reliable forecasting model
+
+👉 This helps in predicting future sales and supports business planning.
+
+---
+
+## 🎨 Conditional Formatting (NEW 🔥)
+
+Conditional formatting was used to enhance data visualization:
+
+* Highlighted high and low sales values
+* Identified top-performing regions and products
+* Improved readability and quick decision-making
+
+👉 This enables users to quickly identify trends and anomalies.
 
 ---
 
@@ -99,13 +133,14 @@ This enables efficient querying and advanced calculations.
 * Identified high-performing regions
 * Analyzed top-selling products
 * Evaluated profitability trends
+* Forecasted future sales growth
 * Enabled dynamic filtering for better decision-making
 
 ---
 
 ## 📸 Dashboard Preview
 
-<img width="1339" height="448" alt="Sales Advanced Dashboard" src="https://github.com/user-attachments/assets/62253940-7fe6-42f1-92cc-49698a72ee0b" />
+<img width="1339" height="448" alt="Sales Advanced Dashboard" src="https://github.com/user-attachments/assets/ad51c7be-4880-4185-bf2d-61f36af28402" />
 
 
 ---
@@ -114,14 +149,15 @@ This enables efficient querying and advanced calculations.
 
 ✔ End-to-end data analytics workflow
 ✔ Real-world business problem solving
-✔ Hands-on with Power Query, Data Modeling & DAX
-✔ Interactive dashboard design
+✔ Advanced Excel (Power Query + DAX + Data Model)
+✔ Forecasting using ETS model
+✔ Interactive and dynamic dashboard
 
 ---
 
 ## 📄 Project Report
 
-Detailed report is available in the repository.
+Detailed project report is included in the repository.
 
 ---
 

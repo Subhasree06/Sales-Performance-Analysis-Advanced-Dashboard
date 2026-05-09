@@ -1,172 +1,98 @@
-# 📊 Sales Performance Analysis Dashboard (Excel Project)
+# SALES PERFORMANCE ANALYSIS USING EXCEL & POWER BI
+
+## Project Overview
+This project focuses on analyzing sales performance using Microsoft Excel and Power BI. The project demonstrates the complete data analytics workflow including data cleaning, data modeling, DAX calculations, and dashboard creation.
+
+The dashboard provides insights into:
+- Sales performance
+- Profitability
+- Regional analysis
+- Product analysis
+- Customer segmentation
 
 ---
 
-## 🚀 Project Overview
-
-This project demonstrates an end-to-end sales analytics solution built using Microsoft Excel. It includes data cleaning, data modeling, advanced calculations, and forecasting to derive meaningful business insights.
-
-The project transforms raw sales data into an interactive dashboard that supports data-driven decision-making.
-
----
-
-## 🛠️ Tools & Technologies Used
-
-* Microsoft Excel
-* Power Query (Data Cleaning)
-* Power Pivot (Data Modeling)
-* DAX (Data Analysis Expressions)
-* Forecasting (ETS Model)
-* Conditional Formatting
+## Tools & Technologies
+- Microsoft Excel
+- Power Query
+- Power Pivot
+- DAX
+- Power BI
 
 ---
 
-## 📂 Dataset Description
-
-The project uses three datasets:
-
-### 1. Sales Data
-
-* OrderID
-* OrderDate
-* CustomerID
-* ProductID
-* Quantity
-* UnitPrice
-* TotalSale
-* Region
-
-### 2. Products Data
-
-* ProductID
-* ProductName
-* Category
-* Cost
-
-### 3. Customers Data
-
-* CustomerID
-* CustomerName
-* Region
-* Segment
+## Features
+- Interactive Dashboard
+- KPI Cards
+- Sales Trend Analysis
+- Region-wise Sales Analysis
+- Product Performance Analysis
+- Customer Segment Analysis
+- Dynamic Filters & Slicers
 
 ---
 
-## 🔗 Data Modeling
-
-A **Star Schema** was implemented:
-
-* Sales → Products (ProductID)
-* Sales → Customers (CustomerID)
-
-This structure improves performance and enables advanced analytics.
+## Dataset Used
+The project uses:
+1. Sales Dataset
+2. Products Dataset
+3. Customers Dataset
 
 ---
 
-## 📈 Key DAX Measures
-
-* Total Revenue = SUM(Sales[TotalSale])
-* Total Quantity = SUM(Sales[Quantity])
-* Total Orders = DISTINCTCOUNT(Sales[OrderID])
-* Total Cost = SUMX(Sales, Sales[Quantity] * RELATED(Products[Cost]))
-* Profit = [Total Revenue] - [Total Cost]
-* Profit % = DIVIDE([Profit], [Total Revenue])
+## Data Cleaning
+Performed using Power Query:
+- Removed null values
+- Corrected data types
+- Cleaned inconsistent records
+- Validated calculations
 
 ---
 
-## 📊 Dashboard Features
-
-### 🔹 KPI Cards
-
-* Total Revenue
-* Profit
-* Profit %
-
-### 🔹 Visualizations
-
-* Sales Trend Over Time
-* Region-wise Sales
-* Top Performing Products
-
-### 🔹 Interactive Filters
-
-* Region
-* Category
-* Segment
+## Data Modeling
+Implemented Star Schema:
+- Sales Table (Fact Table)
+- Products Table (Dimension Table)
+- Customers Table (Dimension Table)
 
 ---
 
-## 📉 Forecasting Analysis (NEW 🔥)
-
-Forecasting was performed using Excel’s **Exponential Smoothing (ETS) model**.
-
-### Key Observations:
-
-* Sales show a consistent **upward trend**
-* Forecast predicts continued growth in future periods
-* Confidence intervals indicate expected value range
-* No strong seasonality pattern observed
-
-### Accuracy Metrics:
-
-* Low error values (MAE, RMSE, SMAPE)
-* Indicates reliable forecasting model
-
-👉 This helps in predicting future sales and supports business planning.
+## DAX Measures
+Key measures created:
+- Total Revenue
+- Total Profit
+- Profit %
+- Total Orders
+- Total Quantity
 
 ---
 
-## 🎨 Conditional Formatting (NEW 🔥)
-
-Conditional formatting was used to enhance data visualization:
-
-* Highlighted high and low sales values
-* Identified top-performing regions and products
-* Improved readability and quick decision-making
-
-👉 This enables users to quickly identify trends and anomalies.
+## Dashboard Insights
+- Identified high-performing regions
+- Analyzed profitable products
+- Compared customer segments
+- Evaluated monthly sales trends
 
 ---
 
-## 🔍 Key Insights
-
-* Identified high-performing regions
-* Analyzed top-selling products
-* Evaluated profitability trends
-* Forecasted future sales growth
-* Enabled dynamic filtering for better decision-making
-
----
-
-## 📸 Dashboard Preview
-
-<img width="1339" height="448" alt="Sales Advanced Dashboard" src="https://github.com/user-attachments/assets/ad51c7be-4880-4185-bf2d-61f36af28402" />
+## Dashboard Preview
+<img width="964" height="537" alt="Screenshot 2026-05-09 130236" src="https://github.com/user-attachments/assets/9ccc939b-a759-4b97-ae60-925753f12311" />
 
 
 ---
 
-## 📌 Project Highlights
-
-✔ End-to-end data analytics workflow
-✔ Real-world business problem solving
-✔ Advanced Excel (Power Query + DAX + Data Model)
-✔ Forecasting using ETS model
-✔ Interactive and dynamic dashboard
+## Future Enhancements
+- Real-time data integration
+- Forecasting models
+- Time intelligence calculations
+- SQL database connectivity
 
 ---
 
-## 📄 Project Report
-
-Detailed project report is included in the repository.
-
----
-
-## 👤 Author
-
-Subhasree B
+## Conclusion
+This project demonstrates practical Business Intelligence and Data Analytics skills using Excel and Power BI.
 
 ---
 
-## ⭐ If you like this project, give it a star!
-
----
+## Author
+SUBHA SREE B
